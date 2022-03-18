@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNote - API</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="page">
+            <img src="./img/background.jpg" alt="Plano de fundo" class="background-img unselect" draggable="false">
+            <div class="content-container" draggable="false">
+                <form class="form-container">
+                    <img src="./img/smartnote.png" alt="Logo do SmartNote" class="logo unselect" draggable="false">
+                    <h1>Entrar no <span class="logo-name">SmartNote</span></h1>
+                    <label for="name" class="margin-top">Nome</label>
+                    <input type="text" id="name">
+                    <label for="password" class="margin-top">Senha</label>
+                    <input type="password" id="password">
+                    <button id="login-button" class="login-button margin-top unselect" draggable="false" onclick="loginUser(event)">Entrar</button>
+                    <button id="redirect-button" class="redirect-button margin-top unselect" draggable="false" onclick="preventDefault(event)">Entrando...</button>
+                    <span id="error-fill" class="input-fill"></span>
+                    <div class="sign-up">
+                        <hr>
+                        <p>Não tem uma conta? <a href="register.html" class="text-decoration-none"><span class="new-account">Criar uma nova conta</span></a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sarala', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.unselect {
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+
+.page {
+    box-shadow: 0 0 0 100px black inset;
+    height: 100vh;
+}
+
+.background-img {
+    width: 100%;
+    height: 100vh;
+    filter: blur(8px);
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 480px;
+    border-radius: 15px;
+    background-color: rgba(30, 36, 48, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 25px;
+}
+
+.form-container h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+.logo-name {
+    color: rgb(100, 96, 154);
+}
+
+.form-container label {
+    align-self: flex-start;
+    position: relative;
+    right: 5px;
+}
+
+.form-container input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.login-button {
+    width: 102%;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(100, 96, 154);
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.login-button:hover {
+    background-color: rgb(66, 62, 116);
+}
+
+.redirect-button {
+    width: 102%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #313552, #2EB086, rgb(26, 128, 96), rgb(22, 88, 66));
+    background-size: 300% 300%;
+    animation: gradient-background-colors 15s ease infinite;
+    border: none;
+    display: none;
+}
+
+.input-fill {
+    position: relative;
+    top: 10px;
+    color: rgb(216, 38, 38);
+    display: none;  
+}
+
+.sign-up {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+}
+
+.sign-up hr {
+    width: 95%;
+}
+
+.sign-up p {
+    margin-top: 10px;
+}
+
+.sign-up span {
+    color: rgb(100, 96, 154);
+}
+
+.note-content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    border-radius: 15px;
+    background-color: rgba(30, 36, 48, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-note-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-note-container h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+.form-note-container label {
+    align-self: flex-start;
+    position: relative;
+    right: 5px;
+}
+
+.form-note-container input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.note-content-container hr {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.note-container {
+    width: 90%;
+    height: 400px;
+    -webkit-box-shadow: 0 0 10px #fff;
+            box-shadow: 0 0 10px #fff;
+    border-radius: 15px;
+}
+
+#scroll-box {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#scroll-box::-webkit-scrollbar {
+    width: 12px;
+}
+  
+#scroll-box::-webkit-scrollbar-track {
+    background: #36363600;
+}
+  
+#scroll-box::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.note {
+    width: 90%;
+    max-width: 90%;
+    -webkit-box-shadow: 0 0 10px #fff;
+            box-shadow: 0 0 10px #fff;
+    border-radius: 15px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    padding: 10px;
+    color: rgb(228, 228, 228);
+}
+
+
+.note-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.note-button {
+    width: 40%;
+    height: 35px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(100, 96, 154);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.note-button:hover {
+    background-color: rgb(66, 62, 116);
+}
+
+.confirm-button {
+    width: 40%;
+    height: 35px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(26, 128, 96);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 550;
+    display: none;
+}
+
+.confirm-button:hover {
+    background-color: rgb(22, 88, 66);
+}
+
+.logout-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.note-margin-top {
+    margin-top: 10px;
+}
+
+.note-margin-bottom {
+    margin-bottom: 20px;
+}
+
+@keyframes gradient-background-colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

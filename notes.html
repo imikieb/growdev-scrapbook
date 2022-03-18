@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNote - API</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="page">
+            <img src="./img/background.jpg" alt="Plano de fundo" class="background-img unselect" draggable="false">
+            <div class="note-content-container" draggable="false">
+                <form class="form-note-container">
+                    <h1>Adicionar anotações</h1>
+                    <label for="name" class="margin-top">Anotação</label>
+                    <input type="text" id="note-input">
+                    <span id="error-fill"></span>
+                    <button class="login-button margin-top unselect" onclick="addNote(event)" draggable="false">Adicionar</button>
+                </form>
+                <hr>
+                <div class="note-container margin-top">
+                    <div id="scroll-box"></div>
+                </div>
+            </div>
+            <img src="./img/logout.png" alt="Botão de sair" class="logout-button" onclick="logout()">
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
