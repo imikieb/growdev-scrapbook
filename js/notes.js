@@ -2,7 +2,7 @@ const errorFill = document.getElementById('error-fill');
 
 let validate = true;
 
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'https://scrapbook-api-miki.herokuapp.com';
 
 function logout() {
     localStorage.setItem('userList', '');

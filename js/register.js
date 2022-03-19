@@ -9,7 +9,7 @@ let validate = true;
 
 redirectButton.disabled = true;
 
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'https://scrapbook-api-miki.herokuapp.com';
 
 function registerUser(event) {
     event.preventDefault();

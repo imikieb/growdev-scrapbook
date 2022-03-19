@@ -1,6 +1,6 @@
 const userLS = localStorage.getItem('userList');
 
-axios.defaults.baseURL = 'http://localhost:8080'
+axios.defaults.baseURL = 'https://scrapbook-api-miki.herokuapp.com'
 
 function validateUser() {
     const validate = {
