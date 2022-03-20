@@ -154,7 +154,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
-    height: 700px;
+    height: 680px;
     border-radius: 15px;
     background-color: rgba(30, 36, 48, 0.9);
     display: flex;
@@ -240,7 +240,6 @@ a {
     padding: 10px;
     color: rgb(228, 228, 228);
 }
-
 
 .note-button-container {
     display: flex;
